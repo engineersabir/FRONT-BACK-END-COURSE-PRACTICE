@@ -1,11 +1,16 @@
-let id=setInterval(()=>{
-        console.log("Hello World!")
-},2000);
-console.log(id);
+let arr=[{
+        name:"aman",
+        marks:90
+},
+{
+        name:"Ali Raza",
+        marks:95
+},
+{
+name:"mudassir",
+marks:80
+}]
 
-let id2=setTimeout(()=>{
-clearInterval(id);
-console.log("The interval has been ran");
-},10000);
-
-console.log(id2);
+arr.forEach((students)=>{
+        console.log(students.marks);
+})
