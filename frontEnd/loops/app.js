@@ -14,3 +14,7 @@ marks:80
 arr.forEach((students)=>{
         console.log(students.marks);
 })
+let cgpa=students.map((el)=>{
+        return marks/10;
+});
+console.log(cgpa);
