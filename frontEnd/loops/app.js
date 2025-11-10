@@ -1,20 +1,7 @@
-let arr=[{
-        name:"aman",
-        marks:90
-},
-{
-        name:"Ali Raza",
-        marks:95
-},
-{
-name:"mudassir",
-marks:80
-}]
+ let num=[1,2,3,4];
 
-arr.forEach((students)=>{
-        console.log(students.marks);
-})
-let cgpa=students.map((el)=>{
-        return marks/10;
-});
-console.log(cgpa);
+ let double=num.map((el)=>{
+       return el*4;
+
+ })
+ 
