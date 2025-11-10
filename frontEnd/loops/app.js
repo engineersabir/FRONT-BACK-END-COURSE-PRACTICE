@@ -1,7 +1,8 @@
- let num=[1,2,3,4];
+let nums=[1,2,3,4,789]
+let finalVal=nums.reduce((res,el)=>{
+        console.log(res);
+        return res+el;
 
- let double=num.map((el)=>{
-       return el*4;
-
- })
- 
+})
+;
+console.log(finalVal);
