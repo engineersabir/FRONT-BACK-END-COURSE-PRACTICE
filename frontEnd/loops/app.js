@@ -1,8 +1,11 @@
-let nums=[1,2,3,4,789]
-let finalVal=nums.reduce((res,el)=>{
-        console.log(res);
-        return res+el;
-
-})
-;
-console.log(finalVal);
+function getMin(nums){
+        let min= nums.reduce((min,el)=>{
+                if(min<el){
+                        return min;
+                }else{
+                        return el;
+                }
+        });
+        return min;
+}
+let nums=[10,20, 30, 40,5];
