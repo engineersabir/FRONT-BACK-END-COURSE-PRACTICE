@@ -1,21 +1,17 @@
-let btn = document.querySelector("button");
+function getNum(){
+    return new Promise((resolve,reject)=>{
 
-btn.addEventListener("click", function () {
-    let h3 = document.querySelector("h3");
+        setTimeout(()=>{
 
-    let randomColor = getRandomColor(); // ← call the function
+            let num =Math.floor(Math.random()*10)+1;
+            console.log(num);
+            resolve();
 
-    h3.innerText = randomColor;
+        },1000);
+    });
+}
 
-    let div = document.querySelector("div");
-    div.style.backgroundColor = randomColor;
-});
-
-function getRandomColor() {
-    let red = Math.floor(Math.random() * 255);
-    let green = Math.floor(Math.random() * 255);
-    let blue = Math.floor(Math.random() * 255);
-
-    let color = `rgb(${red}, ${green}, ${blue})`; // ← fixed format
-    return color;
+async function demo() {
+    await getNum();
+    getNum();
 }
