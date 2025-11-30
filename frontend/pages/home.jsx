@@ -26,6 +26,9 @@ function Home(){
     </form>
 
 <div className="movies-grid">
+(movies.map(movie)=>{
+    
+})
 {movies.map((movie=> <MovieCard movie={movie} key={movie.id}/>))}
 
 </div>
